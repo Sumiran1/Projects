@@ -7,7 +7,7 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from flask import Flask, request, render_template
 
-openai.api_key = "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"
+openai.api_key = "YOUR-KEY_HERE"
 
 ## fixing formatting issues
 embedding_df = pd.read_csv("/Users/sumiran.singh.thakur/Desktop/Olympic Nonsense/brazil_food_clean.csv")
