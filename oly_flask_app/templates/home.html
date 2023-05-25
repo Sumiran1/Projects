@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OlyGPT</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body class="center">
+    <img class="left-torch" src="{{ url_for('static', filename='torch.webp') }}" alt="Olympic torch">
+    <img class="right-torch" src="{{ url_for('static', filename='torch.webp') }}" alt="Olympic torch">
+    <div class="rings">
+      <div class="ring blue"></div>
+      <div class="ring yellow"></div>
+      <div class="ring black"></div>
+      <div class="ring green"></div>
+      <div class="ring red"></div>
+    </div>
+    <h1>OlyGPT</h1>
+    <div class="conversation-container">
+      {% for i, (q, a) in enumerate(convo) %}
+        <div class="conversation" style="background-color: {% if i % 2 == 0 %}#ffffff{% else %}#f2f2f2{% endif %}">
+          <h2>Question {{ i+1 }}: {{ q }}</h2>
+          <p>Answer: {{ a }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="question-form toolbar">
+        <form action="/get_answer" method="post">
+          <label for="question">Ask a question:</label>
+          <input type="text" id="question" name="question">
+          <input type="submit" value="Submit">
+        </form>
+    </div>
+  </body>
+</html>
+

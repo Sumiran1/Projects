@@ -1,0 +1,138 @@
+/* Center the content */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  
+  /* Style the alternating rows */
+  .conversation {
+    margin-top: 50px;
+    width: 1000px;
+    font-size: 13px !important;
+    border: 0.5px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .conversation:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .conversation .answer {
+    font-size: 40px !important;
+  }
+
+  /* Style the page title */
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Style the Olympic rings */
+  .rings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .ring {
+    width: 30px;
+    height: 30px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  
+  .ring.blue {
+    border-color: #007FFF;
+  }
+  
+  .ring.yellow {
+    border-color: #F5D130;
+  }
+  
+  .ring.black {
+    border-color: #000;
+  }
+  
+  .ring.green {
+    border-color: #009B48;
+  }
+  
+  .ring.red {
+    border-color: #EF3340;
+  }
+  
+  /* Style the ask a question form */
+  .question-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .question-form label {
+    display: none;
+  }
+  
+  .question-form input[type="text"] {
+    height: 30px;
+    width: 1000px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    flex-grow: 1;
+    text-align: center;
+    border: 3px solid black;
+  }
+  
+  .question-form input[type="submit"] {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 0;
+    vertical-align: middle;
+    margin-top: 5px; /* added */
+  }
+  
+  .question-form input[type="submit"]:hover {
+    background-color: #007FFF;
+    color: #fff;
+  }
+
+  .left-torch {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) scaleX(-1);
+    width: 20%;
+    height: auto;
+  }
+  
+  .right-torch {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 20%;
+    height: auto;
+  }
+
