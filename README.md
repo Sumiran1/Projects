@@ -5,9 +5,7 @@ I graduated from MIT in 2021 with a Masters in Data Science, and from UC Berkele
 
 If you navigate to my LinkedIn: you can read through some of the research I have published, with highlights surrounding deep learning based arrhythmia detection, and AI induced fairness in medical models.
 
-
 I am a data scientist/machine learning engineer and have therefore undertaken projects (some with the aid of friends) to help hone my data science skills, while also integrating my passions of powerlifting and NBA basketball. Please feel free to contact me at sumi123@berkeley.edu/ sumi123@mit.edu for any questions, and happy coding :)
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/mXZxo5RAhfI/0.jpg)](http://www.youtube.com/watch?v=mXZxo5RAhfI)
 
 
